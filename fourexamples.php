@@ -65,7 +65,7 @@ function ifStatements()
 
 function switchStatements()
 {
-	$var;
+	$var = "hello";
 	$str = '<u>'."Switch Cases".'</u>';
 	
 	switch($var)
@@ -80,9 +80,11 @@ function switchStatements()
 			$str .= '<p>' .'variable is null' . '</p>';
 		case !empty($var):
 			$str .= '<p>' .'variable is empty' . '</p>';
-			break;
 		case !isset($var):
 			$str .= '<p>' .'variable is set' . '</p>';
+			
+			break;
+			
 	} 
 	return $str;
 }
